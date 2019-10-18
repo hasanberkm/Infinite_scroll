@@ -1,7 +1,7 @@
 page=0; //Page indicator
   
 $.post("url_is_here", { process:"getPosts" page: page }, function(data){
- if( data.indexOf( "determiner_like_a_verb" ) == -1 )
+ if( data.indexOf( "No have any more." ) == -1 )
  {
    $(".ClassName_or_#IdName").append(data);
    page += 10
@@ -10,7 +10,7 @@ $.post("url_is_here", { process:"getPosts" page: page }, function(data){
  }
  else
  {
-   $(".process-comm").html("No Post Have Any More!");
+   $(".process-comm").html("<p>"+data+"<p>");
  }
 })
 
