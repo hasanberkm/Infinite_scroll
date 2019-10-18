@@ -14,13 +14,12 @@ if(isset($_POST))
       {
         echo "
         <p>".$p["postTitle"]."<p>
-        <p>".$p["postText"]."<p>
-";
+        <p>".$p["postText"]."<p>";
       } 
     }
     else
     {
-      echo "No have any more.";
+      echo "No Have Post Any More.";
     }
   }
 }
